@@ -1,0 +1,26 @@
+services:
+  db:
+    image: mysql:8
+    container_name: mysql_db
+    restart: always
+    ports:
+      - "3306:3306"
+    env_file:
+      - .env
+    volumes:
+      - ./db_data:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    container_name: django_backend
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    restart: always
+    depends_on:
+      - db
+      
+volumes:
+  db_data:
