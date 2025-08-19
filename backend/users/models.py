@@ -6,6 +6,8 @@ class User(models.Model):
     
     class Meta:
         db_table = 'user'
+        verbose_name = 'Usuário'
+        verbose_name_plural = 'Usuários'
         
     def __str__(self):
         return self.username
