@@ -1,0 +1,76 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.areaLogin {
+    background-color: var(--cinza500);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    min-width: 50%;
+
+    border: 1px solid var(--amarelo900);
+    box-shadow: 0px 0px 7px var(--laranja900);
+    margin: 0 2rem;
+}
+
+.logo {
+    max-width: min(400px, 70vw);
+    border-radius: 10px;
+}
+
+.areaLogin h1 {
+    font-size: min(1.6rem, 5vw);
+    font-weight: 600;
+    color: #FFA500;
+     text-shadow: 
+     2px 2px 0 #000f,   /* sombra laranja escuro */
+    -2px 2px 0 #000f,
+     2px -2px 0 #000f,
+    -2px -2px 0 #000f,
+    
+    /* Glow mais suave */
+    0 0 0px #000f,
+    0 0 0px #000f,
+    0 0 0px #000f;
+    text-align: center;
+}
+
+.areaLogin label {
+    font-family: 'Anime', sans-serif;
+}
+
+@keyframes swing {
+
+    0%,
+    100% {
+        transform: rotate(-1deg);
+    }
+
+    50% {
+        transform: rotate(1deg);
+    }
+}
+
+.areaLogin button {
+    background-color: var(--laranja900);
+    color: #1a1a1a;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 60%;
+    font-size: min(1.25rem);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.areaLogin button:hover {
+    transform: scale(1.05);
+    background-color: #eed261;
+}

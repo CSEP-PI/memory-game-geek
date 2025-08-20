@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Chewy&family=Pacifico&display=swap');
+
+:root {
+  --azul700: #010D1D;
+  --cinza500: #202833;
+  --amarelo700: #B28D15;
+  --verde700: #478569;
+  --vermelho700: #844348;
+  
+  --amarelo300: #34352F;
+  --verde300: #1F3737;
+  --vermelho300: #342A33;
+  
+  --amarelo900: #F1C40F;
+  --laranja900: #FFA500;
+}
+
+@font-face {
+  font-family: 'Naruto';
+  src: url('./assets/fonts/naruto.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Anime';
+  src: url('./assets/fonts/AnimeInept.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Naruto', sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--azul700);
+}
+
+input {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+

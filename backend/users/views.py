@@ -36,6 +36,7 @@ class CadastroView(APIView):
 class LoginView(APIView):
     def post(self, request):
         username = request.data.get('username').strip()
+        print(username)
         
         user = User.objects.filter(username=username).first()
         if user:
@@ -45,7 +46,12 @@ class LoginView(APIView):
                 "user": user.username,
                 "telefone": user.telefone,
             }, status=HTTP_201_CREATED)
-        
+            
+        if not username:
+            return Response({
+                "detail": 'Você precisa informar seu nome de usuário!'
+            }, status=HTTP_400_BAD_REQUEST)
+            
         return Response({
             "detail": f'Não existe cadastro para: {username}. Verifique suas informações e tente novamente. '
         }, status=HTTP_400_BAD_REQUEST)

@@ -13,12 +13,12 @@ from django_filters import rest_framework as filters
 class AnimeViewSet(ModelViewSet):
     queryset = Anime.objects.all()
     serializer_class = AnimeSerializer
-    http_method_names = ['get']
+    http_method_names = ['get', 'post']
     
 class CartaViewSet(ModelViewSet):
     queryset = Carta.objects.all()
     serializer_class = CartaSerializer
-    http_method_names = ['get']
+    http_method_names = ['get', 'post']
     filter_backends = [filters.DjangoFilterBackend]
     filterset_fields = ['anime']
     
