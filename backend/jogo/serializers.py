@@ -13,5 +13,5 @@ class QuestaoSerializer(ModelSerializer):
         
 class RespostaSerializer(ModelSerializer):
     class Meta:
-        model = Jogo
+        model = Resposta
         fields = '__all__'        
