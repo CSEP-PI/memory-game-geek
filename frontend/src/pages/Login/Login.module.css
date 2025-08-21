@@ -6,7 +6,7 @@
 }
 
 .areaLogin {
-    background-color: var(--cinza500);
+    background-color: var(--cinza700);
     padding: 2rem;
     border-radius: 10px;
     display: flex;
@@ -16,7 +16,7 @@
     min-width: 50%;
 
     border: 1px solid var(--amarelo900);
-    box-shadow: 0px 0px 7px var(--laranja900);
+    box-shadow: 0px 0px 12px var(--laranja900);
     margin: 0 2rem;
 }
 

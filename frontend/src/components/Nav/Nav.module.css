@@ -1,0 +1,4 @@
+.logo {
+    max-width: min(80px, 70vw);
+    border-radius: 10px;
+}

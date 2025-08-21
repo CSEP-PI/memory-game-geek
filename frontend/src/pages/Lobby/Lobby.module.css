@@ -1,0 +1,113 @@
+.container {
+    box-sizing: border-box;
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 3rem;
+
+        button {
+            background-color: var(--laranja900);
+            color: var(--azul700);
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 2.5rem;
+            font-size: min(1.25rem);
+            border: none;
+            transition: all 0.2s ease-in-out;
+            font-family: 'Naruto';
+        }
+
+        button:hover {
+            background-color: var(--amarelo300);
+            color: var(--laranja900);
+            border: 2px solid var(--laranja900);
+        }
+    }
+
+    main .areaTitulo h1 {
+        font-size: min(2rem, 7vw);
+        color: var(--white);
+        font-weight: bold;
+    }
+
+    main .areaTitulo p {
+        font-size: min(1rem);
+        font-weight: 400;
+        color: var(--white300);
+    }
+
+    main .areaCards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2.5rem;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+
+    main .areaDificuldade {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: var(--cinza700);
+        margin-top: 2.5rem;
+        border-radius: 20px;
+        padding: 2rem;
+
+        .areaCardsDf {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .cardDfF {
+            background-color: var(--verde300);
+            border: 2px solid var(--verde700);
+        }
+
+        .cardDfM {
+            background-color: var(--amarelo300);
+            border: 2px solid var(--amarelo700);
+        }
+
+        .cardDfD {
+            background-color: var(--vermelho300);
+            border: 2px solid var(--vermelho700);
+        }
+
+        .cardDfF,
+        .cardDfM,
+        .cardDfD {
+            min-width: 230;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            border-radius: 20px;
+            flex: 1 1 18%;
+            cursor: pointer;
+
+            h1 {
+                font-size: min(1.5rem);
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+
+            h2 {
+                font-size: min(1rem);
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: min(1rem);
+                color: var(--white300);
+            }
+        }
+
+
+
+    }
+
+}

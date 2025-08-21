@@ -1,0 +1,88 @@
+.container {
+
+    main {
+        margin: 2rem 3rem;
+        display: flex;
+        flex-direction: column;
+        
+
+        button {
+            background-color: var(--laranja900);
+            color: var(--azul700);
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+            margin-top: 2.5rem;
+            font-size: min(1.25rem);
+            width: 40%;
+            align-self: center;
+            border: none;
+            transition: all 0.2s ease-in-out;
+            font-family: 'Naruto';
+        }
+    }
+
+    .info {
+        background-color: var(--cinza700);
+        display: flex;
+        padding: 2rem;
+        border-radius: 20px;
+        justify-content: space-around;
+        border: 1px solid var(--cinza500);
+    }
+
+    .info div {
+        background-color: var(--cinza500);
+        padding: 5px 15px;
+        border-radius: 30px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        background-color: var(--cinza700);
+        margin-top: 2.5rem;
+        padding: 2rem;
+        justify-content: center;
+        width: 80%;
+        border-radius: 20px;
+        align-self: center;
+        border: 1px solid var(--cinza500);
+    }
+
+    
+
+    .frente,
+    .verso {
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .frente {
+        background-color: yellow;
+        z-index: 3;
+    }
+
+    .verso {
+        background-color: red;
+        transform: rotateY(180deg);
+    }
+}

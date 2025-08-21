@@ -15,20 +15,28 @@ class JogoViewSet(ModelViewSet):
 class EnviarPergunta(APIView):
     def get(self, request):
         anime = request.query_params.get('anime')
+        difc = request.query_params.get('dificuldade')
         
         if not anime:
             return Response({
                 "detail": "Você deve informar um anime."
             }, status=HTTP_400_BAD_REQUEST)
         
-        questoes = Questao.objects.filter(anime=anime)
-        questao_aleatoria = random.choice(questoes)
-        respostas = Resposta.objects.filter(questao=questao_aleatoria.id)
+        questoes = Questao.objects.filter(anime=anime, dificuldade=difc)
+        perguntas_totais = []
+        for questao in questoes:
+            respostas = Resposta.objects.filter(questao=questao.id)
+            
+            qt = {
+                "questao": QuestaoSerializer(questao).data,
+                "respostas": RespostaSerializer(respostas, many=True).data,
+            }
+            
+            perguntas_totais.append(qt)
         
         return Response({
                 "detail": "Questão enviada com sucesso!",
-                "questao": QuestaoSerializer(questao_aleatoria).data,
-                "respostas": RespostaSerializer(respostas, many=True).data
+                "perguntas" : perguntas_totais
             }, status=HTTP_200_OK)
         
     
