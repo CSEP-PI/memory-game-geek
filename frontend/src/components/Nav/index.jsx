@@ -36,7 +36,7 @@ export function NavBar() {
                         <li className="nav-item">
                             <a className="nav-link" onClick={() => {
                                 navigate('/')
-                            }}><FaLevelUpAlt/> Sair</a>
+                            }}><CiLogout/> Sair</a>
                         </li>
                     </ul>
                 </div>

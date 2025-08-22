@@ -93,9 +93,10 @@ input {
 }
 
 .carta {
-        min-width:100px;
+        min-width:120px;
         max-width: 200px;
-        min-height: 300px;
+        min-height: 200px;
+        max-height: 300px;
         flex: 0 0 18%; 
         position: relative;
         transform-style: preserve-3d;

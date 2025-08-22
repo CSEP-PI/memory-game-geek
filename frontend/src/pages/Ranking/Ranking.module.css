@@ -1,0 +1,55 @@
+.container {
+
+    main {
+        margin: 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        
+
+        button {
+            background-color: var(--laranja900);
+            color: var(--azul700);
+            padding: 10px;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: min(1.25rem);
+            width: 50%;
+            align-self: center;
+            border: none;
+            transition: all 0.2s ease-in-out;
+            font-family: 'Naruto';
+        }
+    }
+
+    .info {
+        background-color: var(--cinza700);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2rem;
+        border-radius: 20px;
+        justify-content: space-around;
+        border: 1px solid var(--cinza500);
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    
+
+    .game {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        background-color: var(--cinza700);
+        margin-top: 2.5rem;
+        padding: 1rem;
+        justify-content: center;
+        width: 100%;
+        border-radius: 20px;
+        align-self: center;
+        border: 1px solid var(--cinza500);
+    }
+
+    
+
+    
+}

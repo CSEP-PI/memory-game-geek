@@ -42,6 +42,20 @@ export async function getPergunta(anime, dfc, setPerguntas) {
     }
 }
 
+export async function getRanking(setData) {
+    try {
+        const response = await api.get(`/ranking/`)
+        console.log(response.data)
+        setData(response.data.ranking)
+    } catch (error) {
+        if (error.response) {
+            return console.log(error.response.data)
+        }
+
+        return console.log(error)
+    }
+}
+
 export async function postJogo(anime, qtd_jogadas, qtd_quiz, tempo, dificuldade) {
     const user = localStorage.getItem('userId')
     if (!user) {
