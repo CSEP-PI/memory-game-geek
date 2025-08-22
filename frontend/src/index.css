@@ -85,11 +85,18 @@ input {
   color: #fff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: var(--white300);
 }
 
 .carta {
-        width: 200px;
-        height: 300px;
+        min-width:100px;
+        max-width: 200px;
+        min-height: 300px;
+        flex: 0 0 18%; 
         position: relative;
         transform-style: preserve-3d;
         transition: transform 0.6s ease-in-out;
@@ -99,4 +106,14 @@ input {
 
 .virada {
     transform: rotateY(0deg);
+}
+
+.info-lobby {
+  font-weight: 300;
+  font-family: monospace;
+}
+
+.info-lobby span{
+  font-weight: bold;
+  font-family: monospace;
 }

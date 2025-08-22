@@ -239,7 +239,15 @@ export function Game() {
 
                     {cartas.map((item) =>
                         <div className={'carta'} onClick={(e) => {
-                            !carta1 ? primeiroM(e, item.id) : segundoM(e, item.id)
+                            if (carta1 && carta2) {
+                                return;
+                            }
+
+                            if (!carta1) {
+                                primeiroM(e, item.id)
+                            } else {
+                                segundoM(e, item.id)
+                            }
                         }
                         }>
                             <div className={styles.frente}>

@@ -1,8 +1,15 @@
 
 import Logo from '../../assets/imgs/logo.png'
 import styles from './Nav.module.css'
+import { IoHome } from "react-icons/io5";
+import { FaRankingStar } from "react-icons/fa6";
+import { FaLevelUpAlt, FaUser } from "react-icons/fa";
+import { CiLogout } from "react-icons/ci";
+import { useNavigate } from 'react-router-dom';
 
 export function NavBar() {
+    const navigate = useNavigate()
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light nav-principal">
 
@@ -18,16 +25,18 @@ export function NavBar() {
                 <div className="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
                     <ul className="navbar-nav gap-3">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Lobby</a>
+                            <a className="nav-link" onClick={() => navigate('/lobby')}><IoHome/> Lobby</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Ranking</a>
+                            <a className="nav-link" onClick={() => navigate('/ranking')}><FaRankingStar/> Ranking</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">User</a>
+                            <a className="nav-link" href="#"><FaUser/> User</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Sair</a>
+                            <a className="nav-link" onClick={() => {
+                                navigate('/')
+                            }}><FaLevelUpAlt/> Sair</a>
                         </li>
                     </ul>
                 </div>

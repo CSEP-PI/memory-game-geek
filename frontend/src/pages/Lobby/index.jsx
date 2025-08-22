@@ -2,7 +2,7 @@ import styles from './Lobby.module.css'
 import { NavBar } from '../../components/Nav'
 import { CardAnime } from '../../components/CardAnime'
 import { useNavigate } from 'react-router-dom'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { getAnimes } from '../../services/game'
 
 export function Lobby() {
@@ -11,6 +11,7 @@ export function Lobby() {
     const [animes, setAnimes] = useState([])
     const [animeId, setAnimeId] = useState(false)
     const [dificuldade, setDificuldade] = useState(false)
+    const [animeNome, setNomeAnime] = useState('')
 
     useEffect(() => {
         getAnimes(setAnimes)
@@ -35,18 +36,19 @@ export function Lobby() {
                 </div>
 
                 <section className={styles.areaCards}>
-                    {animes.map((item) => 
-                        <CardAnime 
+                    {animes.map((item) =>
+                        <CardAnime
                             capa={item.capa_img}
                             descricao={item.descricao}
                             fundo={item.fundo_img}
                             nome={item.nome}
                             animeId={item.id}
                             setAnime={setAnimeId}
+                            setNome={setNomeAnime}
                         />
                     )}
 
-                    
+
                 </section>
 
                 <section className={styles.areaDificuldade}>
@@ -76,6 +78,12 @@ export function Lobby() {
                     </div>
 
                 </section>
+                <h1 className='mt-5 mb-3 info-lobby'>Anime Selecionado: <span>{animeNome}</span></h1>
+                <h1 className='info-lobby'>Dificuldade: <span className=''>
+                    {dificuldade === 'F'? 'Fácil': ''}
+                    {dificuldade === 'M'? 'Médio': ''}
+                    {dificuldade === 'D'? 'Difícil': ''}
+                </span></h1>
 
                 <button onClick={() => goGame()}>Start Game</button>
             </main>

@@ -28,7 +28,7 @@ if env_file.exists():
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env('SECRET_KEY')
+SECRET_KEY = env('SECRET_KEY', default='abq^et=yb=v1+^y6$b%3=1yujhcu_5t*1&4a*0m@w5za9#31z_')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG', default=True)
@@ -98,14 +98,21 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': env('MYSQL_DATABASE'),
+#         'USER': env('MYSQL_USER'),
+#         'PASSWORD': env('MYSQL_PASSWORD'),
+#         'HOST': env('MYSQL_HOST', default='localhost'),
+#         'PORT': env('MYSQL_PORT', default=3306),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': env('MYSQL_DATABASE'),
-        'USER': env('MYSQL_USER'),
-        'PASSWORD': env('MYSQL_PASSWORD'),
-        'HOST': env('MYSQL_HOST', default='localhost'),
-        'PORT': env('MYSQL_PORT', default=3306),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / "db.sqlite3",
     }
 }
 

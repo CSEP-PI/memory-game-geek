@@ -39,6 +39,21 @@ class LoginView(APIView):
         print(username)
         
         user = User.objects.filter(username=username).first()
+
+        if not user:
+            novo_user = User.objects.create(
+                username=username,
+                telefone='99999999'
+            )
+
+            return Response({
+                "detail": 'Usuário autenticado com succeso!',
+                "id": novo_user.id,
+                "user": novo_user.username,
+                "telefone": novo_user.telefone,
+            }, status=HTTP_201_CREATED)
+
+
         if user:
             return Response({
                 "detail": 'Usuário autenticado com succeso!',
