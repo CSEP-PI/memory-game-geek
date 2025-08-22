@@ -2,7 +2,8 @@ from .base import *
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'backend', '10.19.8.2', '192.168.18.109']
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
+#CORS_ALLOWED_ORIGINS =  env.list('CORS_ALLOWED_ORIGINS', default=[''])
 CORS_ALLOW_ALL_ORIGINS = True
 
 DATABASES = {
