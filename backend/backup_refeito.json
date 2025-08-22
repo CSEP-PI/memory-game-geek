@@ -1,0 +1,3662 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "username": "samuel0",
+      "telefone": "86999999999"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "username": "samuel1",
+      "telefone": "86999785427"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "username": "samuel2",
+      "telefone": "86999785427"
+    }
+  },
+  {
+    "model": "jogo.jogo",
+    "pk": 1,
+    "fields": {
+      "usuario": 1,
+      "anime": 1,
+      "qtd_jogadas": 20,
+      "qtd_quiz": 4,
+      "tempo": 60,
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.jogo",
+    "pk": 2,
+    "fields": {
+      "usuario": 1,
+      "anime": 1,
+      "qtd_jogadas": 32,
+      "qtd_quiz": 5,
+      "tempo": 120,
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.jogo",
+    "pk": 3,
+    "fields": {
+      "usuario": 2,
+      "anime": 2,
+      "qtd_jogadas": 20,
+      "qtd_quiz": 6,
+      "tempo": 200,
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.jogo",
+    "pk": 4,
+    "fields": {
+      "usuario": 1,
+      "anime": 2,
+      "qtd_jogadas": 17,
+      "qtd_quiz": 5,
+      "tempo": 85,
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.jogo",
+    "pk": 5,
+    "fields": {
+      "usuario": 1,
+      "anime": 2,
+      "qtd_jogadas": 23,
+      "qtd_quiz": 5,
+      "tempo": 144,
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "temas.anime",
+    "pk": 1,
+    "fields": {
+      "nome": "Naruto",
+      "descricao": "Ninja determinado que sonha em ser Hokage. Sua jornada é sobre amizade e superação.",
+      "capa_img": "capas/naruto_placeholder.jpg",
+      "fundo_img": "fundos/naruto_bg.jpg"
+    }
+  },
+  {
+    "model": "temas.anime",
+    "pk": 2,
+    "fields": {
+      "nome": "One Piece",
+      "descricao": "Luffy quer ser Rei dos Piratas e busca o lendário tesouro One Piece.",
+      "capa_img": "capas/onepiece_placeholder.jpg",
+      "fundo_img": "fundos/onepiece_bg.jpg"
+    }
+  },
+  {
+    "model": "temas.anime",
+    "pk": 3,
+    "fields": {
+      "nome": "Dragon Ball",
+      "descricao": "Goku protege a Terra enquanto supera limites e vilões absurdos.",
+      "capa_img": "capas/dragonball_placeholder.jpg",
+      "fundo_img": "fundos/dragonball_bg.jpg"
+    }
+  },
+  {
+    "model": "temas.anime",
+    "pk": 4,
+    "fields": {
+      "nome": "Bleach",
+      "descricao": "Ichigo ganha poderes de Shinigami e enfrenta hollows e conspirações.",
+      "capa_img": "capas/bleach_placeholder.jpg",
+      "fundo_img": "fundos/bleach_bg.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 1,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_1.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 2,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_2.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 3,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_3.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 4,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_4.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 5,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_5.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 6,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_6.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 7,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_7.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 8,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_8.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 10,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_9.jpg"
+    }
+  },
+  {
+    "model": "temas.carta",
+    "pk": 11,
+    "fields": {
+      "anime": 2,
+      "carta_img": "cartas/1_12.jpg"
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 100,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Como se chama o protagonista de Naruto?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1000,
+    "fields": {
+      "questao": 100,
+      "descricao": "Naruto Uzumaki",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1001,
+    "fields": {
+      "questao": 100,
+      "descricao": "Sasuke Uchiha",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1002,
+    "fields": {
+      "questao": 100,
+      "descricao": "Kakashi Hatake",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 101,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual é o sonho do Naruto?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1003,
+    "fields": {
+      "questao": 101,
+      "descricao": "Ser Hokage",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1004,
+    "fields": {
+      "questao": 101,
+      "descricao": "Ser Anbu",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1005,
+    "fields": {
+      "questao": 101,
+      "descricao": "Ser Daimyō",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 102,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem é o sensei do Time 7?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1006,
+    "fields": {
+      "questao": 102,
+      "descricao": "Kakashi",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1007,
+    "fields": {
+      "questao": 102,
+      "descricao": "Asuma",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1008,
+    "fields": {
+      "questao": 102,
+      "descricao": "Guy",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 103,
+    "fields": {
+      "anime": 1,
+      "pergunta": "O que está selado no Naruto?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1009,
+    "fields": {
+      "questao": 103,
+      "descricao": "Kurama (nove caudas)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1010,
+    "fields": {
+      "questao": 103,
+      "descricao": "Shukaku (uma cauda)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1011,
+    "fields": {
+      "questao": 103,
+      "descricao": "Gyūki (oito caudas)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 104,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual vila ele protege?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1012,
+    "fields": {
+      "questao": 104,
+      "descricao": "Folha (Konoha)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1013,
+    "fields": {
+      "questao": 104,
+      "descricao": "Areia (Sunagakure)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1014,
+    "fields": {
+      "questao": 104,
+      "descricao": "Névoa (Kirigakure)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 105,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem é a kunoichi do Time 7?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1015,
+    "fields": {
+      "questao": 105,
+      "descricao": "Sakura",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1016,
+    "fields": {
+      "questao": 105,
+      "descricao": "Hinata",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1017,
+    "fields": {
+      "questao": 105,
+      "descricao": "Ino",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 106,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual é o clã do Sasuke?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1018,
+    "fields": {
+      "questao": 106,
+      "descricao": "Uchiha",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1019,
+    "fields": {
+      "questao": 106,
+      "descricao": "Hyūga",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1020,
+    "fields": {
+      "questao": 106,
+      "descricao": "Nara",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 107,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Técnica assinatura do Naruto:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1021,
+    "fields": {
+      "questao": 107,
+      "descricao": "Rasengan",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1022,
+    "fields": {
+      "questao": 107,
+      "descricao": "Chidori",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1023,
+    "fields": {
+      "questao": 107,
+      "descricao": "Amaterasu",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 108,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem foi o Quarto Hokage?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1024,
+    "fields": {
+      "questao": 108,
+      "descricao": "Minato Namikaze",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1025,
+    "fields": {
+      "questao": 108,
+      "descricao": "Hiruzen Sarutobi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1026,
+    "fields": {
+      "questao": 108,
+      "descricao": "Tobirama Senju",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 109,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Nome do vilão que fundou a Akatsuki (manipulador):",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1027,
+    "fields": {
+      "questao": 109,
+      "descricao": "Tobi/Obito",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1028,
+    "fields": {
+      "questao": 109,
+      "descricao": "Pain/Nagato",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1029,
+    "fields": {
+      "questao": 109,
+      "descricao": "Itachi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 110,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem derrota Pain em Konoha?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1030,
+    "fields": {
+      "questao": 110,
+      "descricao": "Naruto",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1031,
+    "fields": {
+      "questao": 110,
+      "descricao": "Kakashi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1032,
+    "fields": {
+      "questao": 110,
+      "descricao": "Jiraiya",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 111,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual é o dōjutsu do Itachi?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1033,
+    "fields": {
+      "questao": 111,
+      "descricao": "Sharingan",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1034,
+    "fields": {
+      "questao": 111,
+      "descricao": "Byakugan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1035,
+    "fields": {
+      "questao": 111,
+      "descricao": "Rinnegan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 112,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem é o mestre do Jiraiya?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1036,
+    "fields": {
+      "questao": 112,
+      "descricao": "Hiruzen",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1037,
+    "fields": {
+      "questao": 112,
+      "descricao": "Orochimaru",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1038,
+    "fields": {
+      "questao": 112,
+      "descricao": "Tsunade",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 113,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Que animal invoca o Gamabunta?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1039,
+    "fields": {
+      "questao": 113,
+      "descricao": "Sapo",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1040,
+    "fields": {
+      "questao": 113,
+      "descricao": "Cobra",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1041,
+    "fields": {
+      "questao": 113,
+      "descricao": "Lesma",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 114,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual o verdadeiro nome do Pain líder?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1042,
+    "fields": {
+      "questao": 114,
+      "descricao": "Nagato",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1043,
+    "fields": {
+      "questao": 114,
+      "descricao": "Yahiko",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1044,
+    "fields": {
+      "questao": 114,
+      "descricao": "Konan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 115,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem matou o Itachi Uchiha?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1045,
+    "fields": {
+      "questao": 115,
+      "descricao": "Doença após luta com Sasuke",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1046,
+    "fields": {
+      "questao": 115,
+      "descricao": "Sasuke o decapitou",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1047,
+    "fields": {
+      "questao": 115,
+      "descricao": "Naruto o selou",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 116,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual cauda tem o Kurama?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1048,
+    "fields": {
+      "questao": 116,
+      "descricao": "Nove",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1049,
+    "fields": {
+      "questao": 116,
+      "descricao": "Oito",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1050,
+    "fields": {
+      "questao": 116,
+      "descricao": "Uma",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 117,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem sela metade da Kurama em Naruto recém-nascido?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1051,
+    "fields": {
+      "questao": 117,
+      "descricao": "Minato",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1052,
+    "fields": {
+      "questao": 117,
+      "descricao": "Kushina",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1053,
+    "fields": {
+      "questao": 117,
+      "descricao": "Hiruzen",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 118,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual é o clã da Hinata?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1054,
+    "fields": {
+      "questao": 118,
+      "descricao": "Hyūga",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1055,
+    "fields": {
+      "questao": 118,
+      "descricao": "Uchiha",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1056,
+    "fields": {
+      "questao": 118,
+      "descricao": "Akimichi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 119,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem criou o Rasengan?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1057,
+    "fields": {
+      "questao": 119,
+      "descricao": "Minato",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1058,
+    "fields": {
+      "questao": 119,
+      "descricao": "Jiraiya",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1059,
+    "fields": {
+      "questao": 119,
+      "descricao": "Hashirama",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 120,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual é o nome do irmão do Itachi?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1060,
+    "fields": {
+      "questao": 120,
+      "descricao": "Sasuke",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1061,
+    "fields": {
+      "questao": 120,
+      "descricao": "Shisui",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1062,
+    "fields": {
+      "questao": 120,
+      "descricao": "Fugaku",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 121,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem é o Jinchūriki do Shukaku?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1063,
+    "fields": {
+      "questao": 121,
+      "descricao": "Gaara",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1064,
+    "fields": {
+      "questao": 121,
+      "descricao": "Killer B",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1065,
+    "fields": {
+      "questao": 121,
+      "descricao": "Yugito",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 122,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Qual é o nome do pai do Kakashi?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1066,
+    "fields": {
+      "questao": 122,
+      "descricao": "Sakumo",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1067,
+    "fields": {
+      "questao": 122,
+      "descricao": "Danzo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1068,
+    "fields": {
+      "questao": 122,
+      "descricao": "Fugaku",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 123,
+    "fields": {
+      "anime": 1,
+      "pergunta": "Quem revive muitos mortos com Rinne Tensei?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1069,
+    "fields": {
+      "questao": 123,
+      "descricao": "Nagato",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1070,
+    "fields": {
+      "questao": 123,
+      "descricao": "Obito",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1071,
+    "fields": {
+      "questao": 123,
+      "descricao": "Madara",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 124,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Como se chama o protagonista de One Piece?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1072,
+    "fields": {
+      "questao": 124,
+      "descricao": "Luffy",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1073,
+    "fields": {
+      "questao": 124,
+      "descricao": "Zoro",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1074,
+    "fields": {
+      "questao": 124,
+      "descricao": "Sanji",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 125,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é o sonho do Luffy?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1075,
+    "fields": {
+      "questao": 125,
+      "descricao": "Ser Rei dos Piratas",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1076,
+    "fields": {
+      "questao": 125,
+      "descricao": "Ser Almirante",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1077,
+    "fields": {
+      "questao": 125,
+      "descricao": "Ser Shichibukai",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 126,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Nome da tripulação do Luffy:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1078,
+    "fields": {
+      "questao": 126,
+      "descricao": "Chapéus de Palha",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1079,
+    "fields": {
+      "questao": 126,
+      "descricao": "Coração",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1080,
+    "fields": {
+      "questao": 126,
+      "descricao": "Barba Branca",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 127,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é o navio após o Going Merry?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1081,
+    "fields": {
+      "questao": 127,
+      "descricao": "Thousand Sunny",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1082,
+    "fields": {
+      "questao": 127,
+      "descricao": "Oro Jackson",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1083,
+    "fields": {
+      "questao": 127,
+      "descricao": "Red Force",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 128,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Primeiro membro a se juntar ao Luffy:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1084,
+    "fields": {
+      "questao": 128,
+      "descricao": "Zoro",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1085,
+    "fields": {
+      "questao": 128,
+      "descricao": "Nami",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1086,
+    "fields": {
+      "questao": 128,
+      "descricao": "Usopp",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 129,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Poder que Luffy ganha com fruta:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1087,
+    "fields": {
+      "questao": 129,
+      "descricao": "Elasticidade",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1088,
+    "fields": {
+      "questao": 129,
+      "descricao": "Fogo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1089,
+    "fields": {
+      "questao": 129,
+      "descricao": "Gelo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 130,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem é o Rei dos Piratas do passado?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1090,
+    "fields": {
+      "questao": 130,
+      "descricao": "Gol D. Roger",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1091,
+    "fields": {
+      "questao": 130,
+      "descricao": "Shanks",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1092,
+    "fields": {
+      "questao": 130,
+      "descricao": "Barba Branca",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 131,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é a profissão da Nami?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1093,
+    "fields": {
+      "questao": 131,
+      "descricao": "Navegadora",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1094,
+    "fields": {
+      "questao": 131,
+      "descricao": "Arqueira",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1095,
+    "fields": {
+      "questao": 131,
+      "descricao": "Médica",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 132,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem é o médico do bando?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1096,
+    "fields": {
+      "questao": 132,
+      "descricao": "Chopper",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1097,
+    "fields": {
+      "questao": 132,
+      "descricao": "Franky",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1098,
+    "fields": {
+      "questao": 132,
+      "descricao": "Brook",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 133,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é a fruta do Luffy (pré-despertar)?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1099,
+    "fields": {
+      "questao": 133,
+      "descricao": "Gomu Gomu",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1100,
+    "fields": {
+      "questao": 133,
+      "descricao": "Mera Mera",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1101,
+    "fields": {
+      "questao": 133,
+      "descricao": "Hie Hie",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 134,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Em Enies Lobby, quem grita 'Quero viver'?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1102,
+    "fields": {
+      "questao": 134,
+      "descricao": "Robin",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1103,
+    "fields": {
+      "questao": 134,
+      "descricao": "Nami",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1104,
+    "fields": {
+      "questao": 134,
+      "descricao": "Vivi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 135,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem derrota Crocodile?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1105,
+    "fields": {
+      "questao": 135,
+      "descricao": "Luffy",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1106,
+    "fields": {
+      "questao": 135,
+      "descricao": "Zoro",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1107,
+    "fields": {
+      "questao": 135,
+      "descricao": "Smoker",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 136,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é o espadachim do bando?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1108,
+    "fields": {
+      "questao": 136,
+      "descricao": "Zoro",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1109,
+    "fields": {
+      "questao": 136,
+      "descricao": "Brook",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1110,
+    "fields": {
+      "questao": 136,
+      "descricao": "Kin'emon",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 137,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem constrói o Thousand Sunny?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1111,
+    "fields": {
+      "questao": 137,
+      "descricao": "Franky",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1112,
+    "fields": {
+      "questao": 137,
+      "descricao": "Usopp",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1113,
+    "fields": {
+      "questao": 137,
+      "descricao": "Iceburg sozinho",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 138,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Nome do arquipélago antes de chegar à Red Line pós-TS:",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1114,
+    "fields": {
+      "questao": 138,
+      "descricao": "Sabaody",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1115,
+    "fields": {
+      "questao": 138,
+      "descricao": "Dressrosa",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1116,
+    "fields": {
+      "questao": 138,
+      "descricao": "Zou",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 139,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem comeu a Yami Yami no Mi?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1117,
+    "fields": {
+      "questao": 139,
+      "descricao": "Barba Negra",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1118,
+    "fields": {
+      "questao": 139,
+      "descricao": "Ace",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1119,
+    "fields": {
+      "questao": 139,
+      "descricao": "Kuzan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 140,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual o nome do pai do Luffy?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1120,
+    "fields": {
+      "questao": 140,
+      "descricao": "Monkey D. Dragon",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1121,
+    "fields": {
+      "questao": 140,
+      "descricao": "Garp",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1122,
+    "fields": {
+      "questao": 140,
+      "descricao": "Rayleigh",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 141,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem mata Ace?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1123,
+    "fields": {
+      "questao": 141,
+      "descricao": "Akainu",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1124,
+    "fields": {
+      "questao": 141,
+      "descricao": "Aokiji",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1125,
+    "fields": {
+      "questao": 141,
+      "descricao": "Kizaru",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 142,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é o Haki que permite ver o futuro (usuário notável)?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1126,
+    "fields": {
+      "questao": 142,
+      "descricao": "Katakuri",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1127,
+    "fields": {
+      "questao": 142,
+      "descricao": "Zoro",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1128,
+    "fields": {
+      "questao": 142,
+      "descricao": "Usopp",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 143,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é o verdadeiro nome do 'Mr. 2'?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1129,
+    "fields": {
+      "questao": 143,
+      "descricao": "Bon Clay (Bentham)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1130,
+    "fields": {
+      "questao": 143,
+      "descricao": "Daz Bones",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1131,
+    "fields": {
+      "questao": 143,
+      "descricao": "Killer",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 144,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem é o arqueólogo vivo mais antigo do bando?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1132,
+    "fields": {
+      "questao": 144,
+      "descricao": "Robin",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1133,
+    "fields": {
+      "questao": 144,
+      "descricao": "Brook",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1134,
+    "fields": {
+      "questao": 144,
+      "descricao": "Jinbe",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 145,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é o nome do rei de Alabasta?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1135,
+    "fields": {
+      "questao": 145,
+      "descricao": "Cobra",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1136,
+    "fields": {
+      "questao": 145,
+      "descricao": "Riku",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1137,
+    "fields": {
+      "questao": 145,
+      "descricao": "Neptune",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 146,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Quem derrotou Doflamingo?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1138,
+    "fields": {
+      "questao": 146,
+      "descricao": "Luffy",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1139,
+    "fields": {
+      "questao": 146,
+      "descricao": "Law",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1140,
+    "fields": {
+      "questao": 146,
+      "descricao": "Fujitora",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 147,
+    "fields": {
+      "anime": 2,
+      "pergunta": "Qual é o nome do mink duque em Zou?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1141,
+    "fields": {
+      "questao": 147,
+      "descricao": "Inuarashi",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1142,
+    "fields": {
+      "questao": 147,
+      "descricao": "Nekomamushi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1143,
+    "fields": {
+      "questao": 147,
+      "descricao": "Pedro",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 148,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quantas Esferas do Dragão existem?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1144,
+    "fields": {
+      "questao": 148,
+      "descricao": "7",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1145,
+    "fields": {
+      "questao": 148,
+      "descricao": "5",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1146,
+    "fields": {
+      "questao": 148,
+      "descricao": "9",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 149,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem é o protagonista principal?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1147,
+    "fields": {
+      "questao": 149,
+      "descricao": "Goku",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1148,
+    "fields": {
+      "questao": 149,
+      "descricao": "Vegeta",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1149,
+    "fields": {
+      "questao": 149,
+      "descricao": "Gohan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 150,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Nome do mestre que ensina Kamehameha:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1150,
+    "fields": {
+      "questao": 150,
+      "descricao": "Mestre Kame",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1151,
+    "fields": {
+      "questao": 150,
+      "descricao": "Kami-sama",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1152,
+    "fields": {
+      "questao": 150,
+      "descricao": "Sr. Kaioh",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 151,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Planeta natal dos Saiyajins:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1153,
+    "fields": {
+      "questao": 151,
+      "descricao": "Vegeta",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1154,
+    "fields": {
+      "questao": 151,
+      "descricao": "Namekusei",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1155,
+    "fields": {
+      "questao": 151,
+      "descricao": "Terra",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 152,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Rival mais famoso do Goku:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1156,
+    "fields": {
+      "questao": 152,
+      "descricao": "Vegeta",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1157,
+    "fields": {
+      "questao": 152,
+      "descricao": "Piccolo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1158,
+    "fields": {
+      "questao": 152,
+      "descricao": "Kuririn",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 153,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Cor clássica do cabelo Super Saiyajin:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1159,
+    "fields": {
+      "questao": 153,
+      "descricao": "Dourado",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1160,
+    "fields": {
+      "questao": 153,
+      "descricao": "Azul",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1161,
+    "fields": {
+      "questao": 153,
+      "descricao": "Vermelho",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 154,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Nome do dragão de Namekusei:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1162,
+    "fields": {
+      "questao": 154,
+      "descricao": "Porunga",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1163,
+    "fields": {
+      "questao": 154,
+      "descricao": "Shenlong",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1164,
+    "fields": {
+      "questao": 154,
+      "descricao": "Super Shenlong",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 155,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem derrota Freeza em Namekusei?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1165,
+    "fields": {
+      "questao": 155,
+      "descricao": "Goku",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1166,
+    "fields": {
+      "questao": 155,
+      "descricao": "Vegeta",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1167,
+    "fields": {
+      "questao": 155,
+      "descricao": "Gohan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 156,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Filho mais velho do Goku:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1168,
+    "fields": {
+      "questao": 156,
+      "descricao": "Gohan",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1169,
+    "fields": {
+      "questao": 156,
+      "descricao": "Goten",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1170,
+    "fields": {
+      "questao": 156,
+      "descricao": "Trunks",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 157,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Fusão de Goku e Vegeta via brincos:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1171,
+    "fields": {
+      "questao": 157,
+      "descricao": "Vegetto",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1172,
+    "fields": {
+      "questao": 157,
+      "descricao": "Gogeta",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1173,
+    "fields": {
+      "questao": 157,
+      "descricao": "Gotenks",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 158,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem explode o planeta Terra em Z (arco Buu)?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1174,
+    "fields": {
+      "questao": 158,
+      "descricao": "Kid Buu",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1175,
+    "fields": {
+      "questao": 158,
+      "descricao": "Cell",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1176,
+    "fields": {
+      "questao": 158,
+      "descricao": "Freeza",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 159,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Treinador do Goku após morrer contra Raditz:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1177,
+    "fields": {
+      "questao": 159,
+      "descricao": "Sr. Kaioh",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1178,
+    "fields": {
+      "questao": 159,
+      "descricao": "Whis",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1179,
+    "fields": {
+      "questao": 159,
+      "descricao": "Kami-sama",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 160,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Forma de Freeza com chifres longos:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1180,
+    "fields": {
+      "questao": 160,
+      "descricao": "2ª forma",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1181,
+    "fields": {
+      "questao": 160,
+      "descricao": "4ª forma",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1182,
+    "fields": {
+      "questao": 160,
+      "descricao": "Mecha",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 161,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem é o pai do Goku?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1183,
+    "fields": {
+      "questao": 161,
+      "descricao": "Bardock",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1184,
+    "fields": {
+      "questao": 161,
+      "descricao": "Paragus",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1185,
+    "fields": {
+      "questao": 161,
+      "descricao": "Nappa",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 162,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem dá a célula saiyajin a Cell (indiretamente)?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1186,
+    "fields": {
+      "questao": 162,
+      "descricao": "Dr. Gero",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1187,
+    "fields": {
+      "questao": 162,
+      "descricao": "Dr. Myuu",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1188,
+    "fields": {
+      "questao": 162,
+      "descricao": "Bulma",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 163,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem derrota Cell definitivamente?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1189,
+    "fields": {
+      "questao": 163,
+      "descricao": "Gohan",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1190,
+    "fields": {
+      "questao": 163,
+      "descricao": "Goku",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1191,
+    "fields": {
+      "questao": 163,
+      "descricao": "Vegeta",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 164,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Qual o nome do deus da Terra antes do Kami fundir com Piccolo?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1192,
+    "fields": {
+      "questao": 164,
+      "descricao": "Kami",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1193,
+    "fields": {
+      "questao": 164,
+      "descricao": "Kaioshin",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1194,
+    "fields": {
+      "questao": 164,
+      "descricao": "Popo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 165,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Qual técnica vence Cell na luta final?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1195,
+    "fields": {
+      "questao": 165,
+      "descricao": "Kamehameha Pai e Filho",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1196,
+    "fields": {
+      "questao": 165,
+      "descricao": "Final Flash",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1197,
+    "fields": {
+      "questao": 165,
+      "descricao": "Makankōsappō",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 166,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem derrota Kid Buu?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1198,
+    "fields": {
+      "questao": 166,
+      "descricao": "Goku (Genki Dama)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1199,
+    "fields": {
+      "questao": 166,
+      "descricao": "Vegeta (Final Explosion)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1200,
+    "fields": {
+      "questao": 166,
+      "descricao": "Gohan (Ultimate)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 167,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem é o príncipe dos Saiyajins?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1201,
+    "fields": {
+      "questao": 167,
+      "descricao": "Vegeta",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1202,
+    "fields": {
+      "questao": 167,
+      "descricao": "Tarble",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1203,
+    "fields": {
+      "questao": 167,
+      "descricao": "Broly",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 168,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem mata Nappa?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1204,
+    "fields": {
+      "questao": 168,
+      "descricao": "Vegeta",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1205,
+    "fields": {
+      "questao": 168,
+      "descricao": "Goku",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1206,
+    "fields": {
+      "questao": 168,
+      "descricao": "Gohan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 169,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem ressuscita com as esferas após Namek explodir?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1207,
+    "fields": {
+      "questao": 169,
+      "descricao": "Krillin e outros",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1208,
+    "fields": {
+      "questao": 169,
+      "descricao": "Freeza",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1209,
+    "fields": {
+      "questao": 169,
+      "descricao": "Cell",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 170,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Qual é o nome do irmão do Vegeta?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1210,
+    "fields": {
+      "questao": 170,
+      "descricao": "Tarble",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1211,
+    "fields": {
+      "questao": 170,
+      "descricao": "Turles",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1212,
+    "fields": {
+      "questao": 170,
+      "descricao": "Raditz",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 171,
+    "fields": {
+      "anime": 3,
+      "pergunta": "Quem treina Goku e Vegeta no Super?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1213,
+    "fields": {
+      "questao": 171,
+      "descricao": "Whis",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1214,
+    "fields": {
+      "questao": 171,
+      "descricao": "Beerus",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1215,
+    "fields": {
+      "questao": 171,
+      "descricao": "Kibito",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 172,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem é o protagonista de Bleach?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1216,
+    "fields": {
+      "questao": 172,
+      "descricao": "Ichigo Kurosaki",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1217,
+    "fields": {
+      "questao": 172,
+      "descricao": "Uryū Ishida",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1218,
+    "fields": {
+      "questao": 172,
+      "descricao": "Renji Abarai",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 173,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Que arma os Shinigami usam?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1219,
+    "fields": {
+      "questao": 173,
+      "descricao": "Zanpakutō",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1220,
+    "fields": {
+      "questao": 173,
+      "descricao": "Kunai",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1221,
+    "fields": {
+      "questao": 173,
+      "descricao": "Katana comum",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 174,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem dá poderes ao Ichigo no início?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1222,
+    "fields": {
+      "questao": 174,
+      "descricao": "Rukia",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1223,
+    "fields": {
+      "questao": 174,
+      "descricao": "Orihime",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1224,
+    "fields": {
+      "questao": 174,
+      "descricao": "Yoruichi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 175,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Como se chama o mundo dos Shinigami?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1225,
+    "fields": {
+      "questao": 175,
+      "descricao": "Soul Society",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1226,
+    "fields": {
+      "questao": 175,
+      "descricao": "Hueco Mundo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1227,
+    "fields": {
+      "questao": 175,
+      "descricao": "Karakura",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 176,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Hollow são:",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1228,
+    "fields": {
+      "questao": 176,
+      "descricao": "Almas corrompidas",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1229,
+    "fields": {
+      "questao": 176,
+      "descricao": "Deuses",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1230,
+    "fields": {
+      "questao": 176,
+      "descricao": "Quincy",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 177,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Qual é o amigo Quincy do Ichigo?",
+      "dificuldade": "F"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1231,
+    "fields": {
+      "questao": 177,
+      "descricao": "Uryū",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1232,
+    "fields": {
+      "questao": 177,
+      "descricao": "Chad",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1233,
+    "fields": {
+      "questao": 177,
+      "descricao": "Renji",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 178,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Capitão do 6º esquadrão:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1234,
+    "fields": {
+      "questao": 178,
+      "descricao": "Byakuya",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1235,
+    "fields": {
+      "questao": 178,
+      "descricao": "Hitsugaya",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1236,
+    "fields": {
+      "questao": 178,
+      "descricao": "Kenpachi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 179,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Bankai do Ichigo inicialmente:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1237,
+    "fields": {
+      "questao": 179,
+      "descricao": "Tensa Zangetsu",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1238,
+    "fields": {
+      "questao": 179,
+      "descricao": "Zabimaru",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1239,
+    "fields": {
+      "questao": 179,
+      "descricao": "Kyōka Suigetsu",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 180,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem é o cientista capitão do 12º?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1240,
+    "fields": {
+      "questao": 180,
+      "descricao": "Mayuri",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1241,
+    "fields": {
+      "questao": 180,
+      "descricao": "Ukitake",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1242,
+    "fields": {
+      "questao": 180,
+      "descricao": "Kyoraku",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 181,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem é a cura do grupo de Ichigo?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1243,
+    "fields": {
+      "questao": 181,
+      "descricao": "Orihime",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1244,
+    "fields": {
+      "questao": 181,
+      "descricao": "Rukia",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1245,
+    "fields": {
+      "questao": 181,
+      "descricao": "Yuzu",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 182,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Hueco Mundo é o reino dos:",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1246,
+    "fields": {
+      "questao": 182,
+      "descricao": "Hollows/Arrancar",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1247,
+    "fields": {
+      "questao": 182,
+      "descricao": "Shinigami",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1248,
+    "fields": {
+      "questao": 182,
+      "descricao": "Quincy",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 183,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem treina Ichigo para o Bankai?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1249,
+    "fields": {
+      "questao": 183,
+      "descricao": "Yoruichi",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1250,
+    "fields": {
+      "questao": 183,
+      "descricao": "Urahara",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1251,
+    "fields": {
+      "questao": 183,
+      "descricao": "Byakuya",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 184,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Qual o nome do capitão 13º?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1252,
+    "fields": {
+      "questao": 184,
+      "descricao": "Ukitake",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1253,
+    "fields": {
+      "questao": 184,
+      "descricao": "Kyoraku",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1254,
+    "fields": {
+      "questao": 184,
+      "descricao": "Komamura",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 185,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem é o Espada número 4?",
+      "dificuldade": "M"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1255,
+    "fields": {
+      "questao": 185,
+      "descricao": "Ulquiorra",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1256,
+    "fields": {
+      "questao": 185,
+      "descricao": "Grimmjow",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1257,
+    "fields": {
+      "questao": 185,
+      "descricao": "Starrk",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 186,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Verdadeiro poder de Aizen vem de:",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1258,
+    "fields": {
+      "questao": 186,
+      "descricao": "Kyōka Suigetsu",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1259,
+    "fields": {
+      "questao": 186,
+      "descricao": "Zangetsu",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1260,
+    "fields": {
+      "questao": 186,
+      "descricao": "Benihime",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 187,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem derrota Grimmjow (arco Arrancar)?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1261,
+    "fields": {
+      "questao": 187,
+      "descricao": "Ichigo",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1262,
+    "fields": {
+      "questao": 187,
+      "descricao": "Ulquiorra",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1263,
+    "fields": {
+      "questao": 187,
+      "descricao": "Byakuya",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 188,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem é o capitão do 11º esquadrão?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1264,
+    "fields": {
+      "questao": 188,
+      "descricao": "Kenpachi",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1265,
+    "fields": {
+      "questao": 188,
+      "descricao": "Komamura",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1266,
+    "fields": {
+      "questao": 188,
+      "descricao": "Tōsen",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 189,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Técnica do Ichigo com máscara hollow:",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1267,
+    "fields": {
+      "questao": 189,
+      "descricao": "Getsuga Tenshō",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1268,
+    "fields": {
+      "questao": 189,
+      "descricao": "Cero Oscuras",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1269,
+    "fields": {
+      "questao": 189,
+      "descricao": "Gran Rey Cero",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 190,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Destino de Aizen após a guerra?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1270,
+    "fields": {
+      "questao": 190,
+      "descricao": "Selado",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1271,
+    "fields": {
+      "questao": 190,
+      "descricao": "Morto",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1272,
+    "fields": {
+      "questao": 190,
+      "descricao": "Exilado",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 191,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Líder Quincy na Guerra Sangrenta:",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1273,
+    "fields": {
+      "questao": 191,
+      "descricao": "Yhwach",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1274,
+    "fields": {
+      "questao": 191,
+      "descricao": "Ishida",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1275,
+    "fields": {
+      "questao": 191,
+      "descricao": "Ryūken",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 192,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Nome do Espada 1:",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1276,
+    "fields": {
+      "questao": 192,
+      "descricao": "Starrk",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1277,
+    "fields": {
+      "questao": 192,
+      "descricao": "Barragan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1278,
+    "fields": {
+      "questao": 192,
+      "descricao": "Nnoitra",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 193,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem derrota Ulquiorra?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1279,
+    "fields": {
+      "questao": 193,
+      "descricao": "Ichigo (forma hollow completa)",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1280,
+    "fields": {
+      "questao": 193,
+      "descricao": "Ishida",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1281,
+    "fields": {
+      "questao": 193,
+      "descricao": "Orihime",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 194,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem possui Senbonzakura?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1282,
+    "fields": {
+      "questao": 194,
+      "descricao": "Byakuya",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1283,
+    "fields": {
+      "questao": 194,
+      "descricao": "Renji",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1284,
+    "fields": {
+      "questao": 194,
+      "descricao": "Tōshirō",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.questao",
+    "pk": 195,
+    "fields": {
+      "anime": 4,
+      "pergunta": "Quem cria a Urahara Shop?",
+      "dificuldade": "D"
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1285,
+    "fields": {
+      "questao": 195,
+      "descricao": "Kisuke Urahara",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1286,
+    "fields": {
+      "questao": 195,
+      "descricao": "Isshin",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "jogo.resposta",
+    "pk": 1287,
+    "fields": {
+      "questao": 195,
+      "descricao": "Kukaku",
+      "is_correct": false
+    }
+  }
+]

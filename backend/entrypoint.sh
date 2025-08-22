@@ -17,6 +17,8 @@ python manage.py migrate
 python manage.py collectstatic --noinput
 
 
+python manage.py loaddata backup_refeito.json
+
 echo "Criando Superusuário..."
 python manage.py shell <<EOF
 from django.contrib.auth import get_user_model
