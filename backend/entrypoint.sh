@@ -10,12 +10,27 @@ while nc -z "$DB_HOST" "$DB_PORT"; do
   sleep 1
 done
 
-echo "Banco de dados disponível. Executando migrações..."
+echo "Banco de dados Pronto!!"
+
+echo "Configurando Backend.."
 python manage.py migrate
 python manage.py collectstatic --noinput
 
-echo "Iniciando o servidor Django..."
-# exec "$@"
 
-# exec gunicorn core.wsgi:application --bind 0.0.0.0:8000
-exec python manage.py runserver 0.0.0.0:8000
+echo "Criando Superusuário..."
+python manage.py shell <<EOF
+from django.contrib.auth import get_user_model
+
+# Criar superusuário vinculado ao enterprise
+if not User.objects.filter(email='admin@admin.com').exists():
+    User.objects.create_superuser(
+      username='admin',
+      email='admin@admin.com',
+      password='admin',
+    )
+EOF
+
+echo "Iniciando o servidor Django..."
+
+#exec python manage.py runserver 0.0.0.0:8000
+exec gunicorn core.wsgi:application --bind 0.0.0.0:8001
