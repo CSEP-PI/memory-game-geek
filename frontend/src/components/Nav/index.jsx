@@ -10,6 +10,8 @@ import { useNavigate } from 'react-router-dom';
 export function NavBar() {
     const navigate = useNavigate()
 
+    const user = localStorage.getItem('userName')
+
     return (
         <nav className="navbar navbar-expand-lg navbar-light nav-principal">
 
@@ -31,7 +33,7 @@ export function NavBar() {
                             <a className="nav-link" onClick={() => navigate('/ranking')}><FaRankingStar/> Ranking</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#"><FaUser/> User</a>
+                            <a className="nav-link" href="#"><FaUser/> {user ? user : 'Usuário'}</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" onClick={() => {
