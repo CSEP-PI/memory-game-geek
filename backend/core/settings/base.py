@@ -98,16 +98,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': env('MYSQL_DATABASE'),
-#         'USER': env('MYSQL_USER'),
-#         'PASSWORD': env('MYSQL_PASSWORD'),
-#         'HOST': env('MYSQL_HOST', default='localhost'),
-#         'PORT': env('MYSQL_PORT', default=3306),
-#     }
-# }
+
 
 DATABASES = {
     'default': {

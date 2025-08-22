@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
 # Preparando ambiente
-RUN apt-get update && apt-get install -y build-essential default-libmysqlclient-dev pkg-config
+RUN apt-get update && apt-get install -y build-essential default-libmysqlclient-dev pkg-config && rm -rf /var/lib/apt/lists/*
 
 # Definir a pasta base 
 WORKDIR /app
@@ -23,4 +23,4 @@ RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 
 #Expoem a porta 8000 do container
-EXPOSE 8000
+EXPOSE 8001
