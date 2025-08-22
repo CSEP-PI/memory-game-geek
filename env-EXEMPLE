@@ -3,9 +3,9 @@ SECRET_KEY=abq^et=yb=v1+^y6$b%3=1yujhcu_5t*1&4a*0m@w5za9#31z_
 DEBUG=True
 
 # CORS e Hosts Permitidos
-CORS_ORIGIN_WHITELIST=http://localhost:3000
-ALLOWED_HOSTS=127.0.0.1,localhost,0.0.0.0
-#ALLOWED_HOSTS=yourdomain.com,www.yourdomain.com
+CORS_ORIGIN_WHITELIST=http://localhost:3000,http:31.97.175.41:3000
+ALLOWED_HOSTS=127.0.0.1,localhost,0.0.0.0,31.97.175.41
+
 
 #MySQL
 MYSQL_ROOT_PASSWORD=root
