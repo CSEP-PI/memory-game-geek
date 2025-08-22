@@ -11,16 +11,22 @@
     transition: all 0.2s ease-in-out;
 }
 
+
+
+
+
 .card:hover {
     transform: scale(1.05);
 }
 
+
+
 .card img {
     max-width: 100%;
     max-height: 200px;
-    object-fit: cover;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    object-fit: cover;
 }
 
 .card .cardInfo {

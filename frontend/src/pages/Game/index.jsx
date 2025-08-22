@@ -94,7 +94,7 @@ export function Game() {
     function abrirQuiz() {
         console.log('QUESTOES:', quizQuestoes)
         if (quizQuestoes.length === 0) {
-            return alert('Nada')
+            return alert('Você não possui perguntas no quiz para essa dificuldade!.')
         };
 
         const index = Math.floor(Math.random() * quizQuestoes.length);

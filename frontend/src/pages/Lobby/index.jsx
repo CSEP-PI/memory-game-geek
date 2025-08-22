@@ -45,6 +45,7 @@ export function Lobby() {
                             animeId={item.id}
                             setAnime={setAnimeId}
                             setNome={setNomeAnime}
+                            className={animeId === item.id} // <-- aqui
                         />
                     )}
 
@@ -55,21 +56,30 @@ export function Lobby() {
                     <h1>Escolha a dificuldade</h1>
 
                     <div className={styles.areaCardsDf} >
-                        <div className={styles.cardDfF} onClick={() => setDificuldade('F')}>
+                        <div
+                            className={`${styles.cardDfF} ${dificuldade === 'F' ? styles.selecionado : ''}`}
+                            onClick={() => setDificuldade('F')}
+                        >
                             <h1>Fácil</h1>
                             <h2>6 pares de cartas</h2>
                             <p>Multiplicador: 1.0x</p>
                             <p>Tempo Alvo: 3 min</p>
                         </div>
 
-                        <div className={styles.cardDfM} onClick={() => setDificuldade('M')}>
+                        <div
+                            className={`${styles.cardDfM} ${dificuldade === 'M' ? styles.selecionado : ''}`}
+                            onClick={() => setDificuldade('M')}
+                        >
                             <h1>Médio</h1>
                             <h2>8 pares de cartas</h2>
                             <p>Multiplicador: 1.5x</p>
                             <p>Tempo Alvo: 4 min</p>
                         </div>
 
-                        <div className={styles.cardDfD} onClick={() => setDificuldade('D')}>
+                        <div
+                            className={`${styles.cardDfD} ${dificuldade === 'D' ? styles.selecionado : ''}`}
+                            onClick={() => setDificuldade('D')}
+                        >
                             <h1>Difícil</h1>
                             <h2>10 pares de cartas</h2>
                             <p>Multiplicador: 2.0x</p>
@@ -78,12 +88,17 @@ export function Lobby() {
                     </div>
 
                 </section>
-                <h1 className='mt-5 mb-3 info-lobby'>Anime Selecionado: <span>{animeNome}</span></h1>
-                <h1 className='info-lobby'>Dificuldade: <span className=''>
-                    {dificuldade === 'F'? 'Fácil': ''}
-                    {dificuldade === 'M'? 'Médio': ''}
-                    {dificuldade === 'D'? 'Difícil': ''}
-                </span></h1>
+                <h1 className={`${styles.infoSelecionada} mt-5 mb-3`}>
+                    Anime Selecionado: <span>{animeNome}</span>
+                </h1>
+                <h1 className={`${styles.infoSelecionada}`}>
+                    Dificuldade:
+                    <span>
+                        {dificuldade === 'F' ? ' ' + 'Fácil' : ''}
+                        {dificuldade === 'M' ? ' '+'Médio' : ''}
+                        {dificuldade === 'D' ? ' '+'Difícil' : ''}
+                    </span>
+                </h1>
 
                 <button onClick={() => goGame()}>Start Game</button>
             </main>
