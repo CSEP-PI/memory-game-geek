@@ -1,55 +1,186 @@
 .container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--azul700) 0%, var(--azul900) 100%);
+  color: white;
+}
 
-    main {
-        margin: 2rem 2rem;
-        display: flex;
-        flex-direction: column;
-        
+.container main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-        button {
-            background-color: var(--laranja900);
-            color: var(--azul700);
-            padding: 10px;
-            font-weight: bold;
-            border-radius: 10px;
-            font-size: min(1.25rem);
-            width: 50%;
-            align-self: center;
-            border: none;
-            transition: all 0.2s ease-in-out;
-            font-family: 'Naruto';
-        }
-    }
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-    .info {
-        background-color: var(--cinza700);
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2rem;
-        border-radius: 20px;
-        justify-content: space-around;
-        border: 1px solid var(--cinza500);
-        gap: 1rem;
-        margin-top: 2rem;
-    }
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--laranja900);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
-    
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
 
-    .game {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        background-color: var(--cinza700);
-        margin-top: 2.5rem;
-        padding: 1rem;
-        justify-content: center;
-        width: 100%;
-        border-radius: 20px;
-        align-self: center;
-        border: 1px solid var(--cinza500);
-    }
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
 
-    
+.filtros button {
+  background-color: var(--cinza700);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 50px;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: 'Naruto';
+}
 
-    
+.filtros button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.filtros button.ativo {
+  background-color: var(--laranja900);
+  color: var(--azul700);
+  border-color: var(--laranja700);
+}
+
+.tabelaRanking {
+  background-color: var(--cinza700);
+  border-radius: 20px;
+  padding: 1.5rem;
+  border: 1px solid var(--cinza500);
+  overflow-x: auto;
+}
+
+.tabelaRanking table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  table-layout: auto;
+}
+
+.tabelaRanking th, .tabelaRanking td {
+  padding: 1rem 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid var(--cinza500);
+}
+
+.tabelaRanking th {
+  font-size: 1.1rem;
+  border-bottom: 2px solid var(--cinza500);
+}
+
+.tabelaRanking tr:hover {
+  background-color: var(--cinza600);
+}
+
+.tabelaRanking tr.top3 {
+  background-color: rgba(255, 165, 0, 0.1);
+}
+
+.tabelaRanking tr.top3:hover {
+  background-color: rgba(255, 165, 0, 0.15);
+}
+
+.posicao {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.ouro {
+  color: gold;
+  font-size: 1.5rem;
+}
+
+.prata {
+  color: silver;
+  font-size: 1.5rem;
+}
+
+.bronze {
+  color: #cd7f32;
+  font-size: 1.5rem;
+}
+
+.jogador, .tempo, .pontuacao {
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dificuldade {
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.dificuldade.f {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+}
+
+.dificuldade.m {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #FFC107;
+}
+
+.dificuldade.d {
+  background-color: rgba(244, 67, 54, 0.2);
+  color: #F44336;
+}
+
+.carregando {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--cinza500);
+  border-top: 5px solid var(--laranja900);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.vazio {
+  text-align: center;
+  padding: 3rem;
+}
+
+.vazio p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.vazio span {
+  opacity: 0.7;
 }

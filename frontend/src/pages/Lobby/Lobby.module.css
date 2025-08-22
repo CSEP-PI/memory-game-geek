@@ -111,3 +111,42 @@
     }
 
 }
+
+/* Borda para anime selecionado */
+.animeSelecionado {
+    border: 3px solid var(--laranja900);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover nos cards de dificuldade */
+.areaDificuldade .cardDfF:hover,
+.areaDificuldade .cardDfM:hover,
+.areaDificuldade .cardDfD:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.areaDificuldade .selecionado {
+    border: 3px solid var(--azul700);
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px 3px var(--laranja900);
+}
+
+
+.infoSelecionada {
+    font-size: 1.2rem;
+    color: var(--white);
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.infoSelecionada span {
+    color: var(--laranja900);
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 165, 0, 0.6);
+}
